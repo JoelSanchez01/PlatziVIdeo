@@ -143,12 +143,18 @@ footer{
       img{
         padding: 0px;
       }
+
+      a{
+        margin: 5px;
+      }
+
+
     }
     .footer__Enlaces{
     
       flex-direction: column;
       
-      margin-left: 5px;
+      
 
       img{
         margin: 0;
@@ -156,6 +162,8 @@ footer{
       }
 
       a{
+        padding-bottom:5px;
+        padding-left: 5px;
         margin: 0;
         
       }
