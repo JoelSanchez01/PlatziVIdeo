@@ -120,7 +120,7 @@ body {
 .carousel::-webkit-scrollbar {
   width: 0;
   background-color: rgba(0, 0, 0, 0.1);
-  height: 10px;
+  height: 5px;
 }
 
 .carousel::-webkit-scrollbar-thumb {
@@ -205,6 +205,47 @@ body {
   margin: 3px 0px;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+footer a {
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  font-size: 1.6rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer img {
+  width: 200px;
+}
+
+.footer__redes {
+  margin-right: 20px;
+  display: flex;
+}
+.footer__redes img {
+  width: 40px;
+}
+
+.footer__Enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__Enlaces .enlaces {
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .header .header__logo {
     width: 170px;
@@ -217,19 +258,30 @@ body {
   .header .header__profile {
     width: 20;
   }
-}
-footer {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  align-items: center;
-}
-footer a {
-  text-decoration: none;
-  margin: 20px;
-  color: white;
-  font-size: 1.6rem;
-}
-footer a:hover {
-  text-decoration: underline;
+
+  .footer__redes {
+    margin: 0px;
+  }
+  .footer__redes img {
+    padding: 0px;
+  }
+
+  .footer__Enlaces {
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .footer__Enlaces img {
+    margin: 0;
+    width: 170px;
+  }
+  .footer__Enlaces a {
+    margin: 0;
+  }
+  .footer__Enlaces .enlaces {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__Enlaces .enlaces a {
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=principal.css.map */
