@@ -1,0 +1,177 @@
+$colorbg: linear-gradient(to top, #21c08b, #00b9c1, #00aafd, #008fff, #8f57fd);
+$tamBody: 100vh -400px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background:$colorbg;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    .header__logo{
+        margin-left:20px;
+        margin-top:20px;
+        width: 200px;
+    }
+    
+}
+.header__profile{
+    width: 150px;
+    color: white;
+    margin-right:10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    
+    h2{
+        font-size: 2rem;
+        padding: 10px;
+        text-align: center;   
+    }  
+
+    ul{
+        list-style: none;
+        display: none;
+
+        li{
+            padding:3px;
+            text-align: right;    
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;       
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    }    
+}
+
+
+.header__profile:hover ul, ul:hover {
+	display: block;
+}
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    a{
+      text-decoration: none;
+      margin: 20px;
+      color:white;
+      font-size: 1.6rem;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+
+    img {
+      width: 200px;
+    }
+    
+
+  }
+
+  .footer__redes{
+    margin-right: 20px;
+    display: flex;
+    
+
+    img{
+      width: 40px;
+    }
+  }
+
+
+  
+
+
+  .footer__Enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__Enlaces .enlaces{
+    margin-top:10px;
+  }
+
+  @media only screen and (max-width: 600px){
+    .header .header__logo{
+        width: 170px;
+    }
+
+    .header .header__profile ul{
+        
+        margin-right:20px;
+    }
+    .header .header__profile{
+        width: 20;
+    }
+    .footer__redes{
+      margin: 0px;
+
+      img{
+        padding: 0px;
+      }
+    }
+    .footer__Enlaces{
+    
+      flex-direction: column;
+      
+      margin-left: 5px;
+
+      img{
+        margin: 0;
+        width: 170px;
+      }
+
+      a{
+        margin: 0;
+        
+      }
+
+      .enlaces{
+        display: flex;
+        flex-direction: column;
+        
+
+        a{
+          margin-top: 5px;
+        }
+
+      }
+
+    }
+
+
+  }
