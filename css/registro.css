@@ -147,144 +147,107 @@ footer img {
     margin-top: 5px;
   }
 }
-.Buscador {
+body {
+  font-family: "Muli";
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  border: 2px solid white;
+  border-radius: 40px;
+  min-height: 600px;
+  padding: 60px 68px 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  justify-content: space-around;
   align-items: center;
-  width: 80%;
-  height: 300px;
-  margin: 50px auto;
+  margin-bottom: 50px;
+}
+.container h2 {
+  margin-bottom: 75px;
+}
+.container input {
+  width: 300px;
+  padding: 0 20px;
+  border: 0 0 2px 0 solid white;
+  margin-bottom: 20px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid white;
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+  height: 52px;
+}
+.container ::-moz-placeholder {
   color: white;
 }
-.Buscador .Buscador__Titulo {
-  font-size: 3.6rem;
-  padding: 15px;
+.container :-ms-input-placeholder {
+  color: white;
 }
-.Buscador .Buscador__Input {
-  border: 1px solid white;
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 50px;
-  width: 80%;
+.container ::placeholder {
+  color: white;
+}
+
+input:hover {
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid #c2c2c2;
+}
+
+.container__title {
+  font-size: 26px;
   font-family: "Muli", sans-serif;
   color: white;
-  font-size: 2.6rem;
-  padding-left: 40px;
-  outline: none;
 }
-.Buscador ::-moz-placeholder {
+
+.container__button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 25px;
   color: white;
-}
-.Buscador :-ms-input-placeholder {
-  color: white;
-}
-.Buscador ::placeholder {
-  color: white;
-}
-
-.categories__title {
-  background: none;
-  color: white;
-  margin-top: 15px;
-  font-size: 2rem;
-  position: absolute;
-  padding-left: 30px;
-  width: 100%;
-}
-
-.carousel {
-  overflow: scroll;
-  padding-left: 30px;
-  width: 100%;
-  position: relative;
-  height: auto;
-}
-
-.carousel::-webkit-scrollbar {
-  width: 0;
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 5px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background-color: #8f57fd;
-}
-
-.carousel__container {
-  transition: 450ms transform;
-  font-size: 0;
-  white-space: nowrap;
-  margin: 70px 0px;
-  padding-bottom: 10px;
-}
-
-.carousel__container:hover .carousel-item {
-  opacity: 0.3;
-}
-
-.carousel__container:hover .carousel-item:hover {
-  transform: scale(1.5);
-  opacity: 1;
-}
-
-.carousel-item {
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 250px;
-  margin-right: 10px;
-  font-size: 20px;
+  width: 300px;
   cursor: pointer;
-  transition: 450ms all;
-  transform-origin: center left;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
 }
 
-.carousel-item:hover ~ .carousel-item {
-  transform: translate3d(100px, 0, 0);
+.container__button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.carousel-item__img {
-  width: 200px;
-  height: 250px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.carousel-item__details {
-  align-items: flex-start;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-  bottom: 0;
-  display: flex;
-  font-size: 10px;
-  flex-direction: column;
-  justify-content: flex-end;
-  left: 0;
-  opacity: 0;
-  transition: 450ms opacity;
-  padding: 10px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.carousel-item__details--img {
-  width: 20px;
-}
-
-.carousel-item:hover .carousel-item__details {
-  opacity: 1;
-}
-
-.carousel-item__details--title {
+.container__a {
   color: white;
-  margin: 5px 0px 0px 0px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 50px;
 }
 
-.carousel-item__details--subtitle {
-  color: white;
-  font-size: 8px;
-  margin: 3px 0px;
-}/*# sourceMappingURL=principal.css.map */
+.container__a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=registro.css.map */

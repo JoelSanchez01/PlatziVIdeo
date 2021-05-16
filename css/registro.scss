@@ -1,0 +1,106 @@
+@import "headFooter";
+
+body{
+    font-family: 'Muli';
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgba($color: white , $alpha: 0.2);
+    display: flex;
+    flex-direction: column;
+    border:2px solid white;
+    border-radius: 40px;
+    min-height: 600px;
+    padding: 60px 68px 40px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 50px;
+
+    h2{
+        margin-bottom: 75px;
+    }
+
+    input{
+        width: 300px;
+        padding: 0 20px;
+        border:0 0 2px 0 solid white;
+        margin-bottom: 20px;
+        color:white;
+        background-color: transparent;
+        outline: none;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        border-bottom: 2px solid white;
+        font-family: 'Muli', sans-serif;
+        font-size: 20px;
+        height: 52px;
+  
+        
+
+    }
+    ::placeholder {
+        color:
+         white;
+      }
+}
+
+input:hover{
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.container__title{
+    font-size: 26px;
+    font-family: 'Muli', sans-serif;
+    color:white;
+}
+
+.container__button{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    width: 300px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.container__button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container__a {
+    color:white;
+    text-decoration: none;
+    font-size:16px;
+    margin: 50px;
+}
+.container__a:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top:20px;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0px;
+      width: 100%;
+    }
+}
